@@ -37,7 +37,7 @@ public class FeedingController {
 		return "feedings/createOrUpdateFeedingForm";
 	}
 
-	@PostMapping(path = "/feeding/create")
+	@PostMapping(value = "/feeding/create")
 	public String processCreationForm(@Valid Feeding feeding,BindingResult result, Map<String, Object> model) {
 
 		if(result.hasErrors()){
